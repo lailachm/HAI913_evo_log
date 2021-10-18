@@ -30,7 +30,7 @@ import org.eclipse.jdt.core.dom.PackageDeclaration;
 
 public class Parser {
 	
-	public static final String projectPath = "C:\\Users\\Laïla\\Downloads\\pourTP_Evol_logiciel_HLIN505\\HLIN505\\Genericite";
+	public static final String projectPath = "C:\\Users\\Public\\Downloads\\pourTP_Evol_logiciel_HLIN505\\HLIN505\\Genericite";
 	public static final String projectSourcePath = projectPath + "\\src_genericite";
 	public static final String jrePath = "C:\\Program Files (x86)\\Java\\jre1.8.0_301\\lib\\rt.jar";
 
@@ -121,7 +121,7 @@ public class Parser {
 				c++;
 				if(i<Math.ceil(pc)) {
 		   			String strQu12 = "Dans le fichier " + fileEntry.getName() + " \n";
-		   			strQu12 += "La méthode " + key.substring(0, key.length() - 1) + " contient " + value + " ligne(s) de code. \n";
+		   			strQu12 += "La mÃ©thode " + key.substring(0, key.length() - 1) + " contient " + value + " ligne(s) de code. \n";
 			   	    question12.add(strQu12);
 			   	    i++;
 		   		}
@@ -173,7 +173,7 @@ public class Parser {
 		   	    String key = name.toString();
 		   	    listKey1.add(key);
 		   	    String value = nbOfMethodPerClassSorted.get(name).toString();
-		   	    System.out.println("La classe " + key + " a " + value + " méthode(s).");
+		   	    System.out.println("La classe " + key + " a " + value + " mÃ©thode(s).");
 		   	    i++;
 	   		}		   	
 	   	}
@@ -193,7 +193,7 @@ public class Parser {
 	   		}		   	
 	   	}
 	   	
-	   	System.out.println("\n ---10. LES CLASSES QUI FONT PARTIE DES 2 CATEGORIES PRECEDENTES EN MÊME TEMPS---");
+	   	System.out.println("\n ---10. LES CLASSES QUI FONT PARTIE DES 2 CATEGORIES PRECEDENTES EN MÃŠME TEMPS---");
 	   	ArrayList<String> compareKeys=new ArrayList<String>(listKey1);
 	   	compareKeys.retainAll(listKey2);
 	   	System.out.println(compareKeys);
@@ -203,7 +203,7 @@ public class Parser {
 	   	    String key = name.toString();
 	   	    String value = nbOfMethodPerClassSorted.get(name).toString();
 	   	    if(Integer.parseInt(value) > 5) {
-	   	    	System.out.println("La classe " + key + " a " + value + " méthode(s).");
+	   	    	System.out.println("La classe " + key + " a " + value + " mÃ©thode(s).");
 	   	    }
 	   	}
 	   	
